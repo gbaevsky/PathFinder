@@ -13,8 +13,7 @@ then back to the store exit.
 
 Another functionality of the software is that users can upload their own shopping cart, using a JSON structure provided for them. After uploading their cart, 
 the users are presented with data to help them adequately choose a store to shop at based on the items that are offered at each 
-store, the distance traversed to collect all the items, and comparing the overall price of buying those items at the different stores.  
-If certain items they requested are not available at a store, a recommendation is made to the user for alternative items they could buy instead.
+store, the distance traversed to collect all the items, and comparing the overall price of buying those items at the different stores. If certain items they requested are not available at a store, a recommendation is made to the user for alternative items they could buy instead.
 
 The third functionality lists all possible items from every store and allows users to build their carts from this complete list.
 Again users can optimize for lowest price and shortest walking distance, and are suggested with different items when a store is missing something in their cart. 
