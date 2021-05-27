@@ -1,13 +1,53 @@
-# PathFinder
-PathFinder uses an algorithm to collect items in a user's cart while grocery shopping in the shortest possible path and proceeds with recommending users substitute items when not available at the store they are shopping from.
+# CS-3110-Final-Project
 
-When initially running the software, the user has the ability to either shop at one of our pre-made stores formatted through our custom JSON files, upload their own customized grocery cart through our specified JSON format, or build a shopping cart out of all available items.
+Members:
+Ishan Bhatt (ib263), Christopher Mohri (ccm244), Vaughn Campos (vac62), Glenn Baevsky
+(ghb65)
 
-By shopping at our pre-made stores, the user has the ability to select which items they would like to add to their shopping cart and more specifically which brand of the given item out of all the options offered at that store.  After the user has selected all their items and fully built their cart, it presents the user with their shopping cart data such as the quantity of each item they desire, the list of items they selected, and their total pricing, printed out in a receipt form for them in the terminal.  Next, the shopping cart is entered into our shortest path algorithm which computes the shortest optimal path from the entrance of the store to each item in their cart, then back to the store exit.
+Core Vision: As Instacart drivers, we intend to solve the issue of efficient delivery, by
+creating a system to determine the shortest path for finding items in a grocery store. This
+will mean creating data structures to hold the grocery store data, implementing the
+traveling salesperson algorithm, and visualize the layout of each store and the location of
+each item, then visualise the shortest path from item to item. We want to provide grocery
+store users the ability to compare their options for a given order on different metrics from
+price to convenience.
 
-Another functionality of our software is that a user can upload their own shopping cart.  We provide users with a JSON structure to upload their own shopping cart.  After uploading the cart, the user is presented with data to help them adequately choose a store to shop at based on which items are offered at each store, the distance traversed to collect all the items, and comparing the overall price of buying those items at the different stores.  If certain items they requested are not available at a store, a recommendation is made to the user for alternative items they could buy instead.
+Features:
+  - The system will be able to choose between different stores
+  - Choose different items specific to each store and generate a “grocery list”
+  - We will then visualize and generate an optimal path in a text-based way
+  - The system will also be able to create and add in new stores
 
-The third functionality of the software lists all possible items from every store and allows a user to build their cart from this complete list of items.  Again users can optimize for lowest price and shortest walking distance when choosing a store, and are suggested with different items when that store is missing something in their cart.
+Roadmap:
 
-We visualize the stores using a custom grid printer that has various symbols depending on the node type (ie. aisle, item, or open space to walk on).  Using a variety of colors and symbols the user can clearly see the layout of the store and the shortest path to follow to collect all items in their cart.
+MS1
+- Satisfactory
+  - Set up collaborative environment and create a private git repository
+  - Create skeleton system and add signatures in .mli files
+- Good
+  - Design data structure for storing grocery store data
+  - Hardcode data for stores in determined data structure
+  - Create black box tests for functions defined in .mli file
+- Excellent
+  - Pick and implement the algorithm to find the shortest path
 
+MS2
+- Satisfactory
+  - Optimize the shortest path algorithm and have it account for barriers in the store
+- Good
+  - Create user interface to allow store and item selection
+  - This interface will display available stores, and once a store is selected, display the available items
+- Excellent
+  - Visualize the store and the path in a text based way in terminal
+
+MS3
+- Satisfactory
+  - Create a feature to display metrics such as price paid, distance travelled, etc.
+  - Parse user input and create search from list of items
+- Good
+  - Create schema to add and create new grocery stores to run the path finding algorithm on
+  - Allow user to input what items they want, and then the system suggests
+what store to visit based on availability, price, and distance through store
+- Excellent
+  - Integrate the Wegmans API so that Wegmans store have special features
+  - Make recommendations for similar products if a product is not available instore
