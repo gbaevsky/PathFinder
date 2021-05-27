@@ -18,6 +18,6 @@ store, the distance traversed to collect all the items, and comparing the overal
 The third functionality lists all possible items from every store and allows users to build their carts from this complete list.
 Again users can optimize for lowest price and shortest walking distance, and are suggested with different items when a store is missing something in their cart. 
 
-We visualize the stores using a custom grid printer that has various symbols depending on the node type (ie. aisle, item, or open space to walk on). 
+The stores are visualized using a custom grid printer that has various symbols depending on the node type (ie. aisle, item, or open space to walk on). 
 Using a variety of colors and symbols the user can clearly see the layout of the store and the shortest path to follow to collect all items in their cart.
 
